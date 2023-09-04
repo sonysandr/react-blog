@@ -1,12 +1,11 @@
+import { Link } from "react-router-dom";
 import "./login.css";
 
 export default function Login() {
   return (
     <div className="login">
-        <span className="loginTitle">Login</span>
+      <span className="loginTitle">Login</span>
       <form className="loginForm">
-        <label>Email</label>
-        <input type="text" className="loginInput"  placeholder="email" />
         <label>Username</label>
         <input type="text" className="loginInput" placeholder="username" />
         <label>Password</label>
@@ -14,7 +13,11 @@ export default function Login() {
         <button className="loginButton">Login</button>
       </form>
 
-      <button className="loginRegButton">Register</button>
+      <button className="loginRegButton">
+        <Link className="link"  to='/register'>
+          Register
+        </Link>
+      </button>
     </div>
   );
 }
