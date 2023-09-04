@@ -20,7 +20,7 @@ export default function TopBar() {
       <div className="topCenter">
         <ul className="topList">
           <li className="topListItem">
-            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link to="/" className="link">
               HOME
             </Link>
           </li>
@@ -46,7 +46,7 @@ export default function TopBar() {
           </li>
           <li className="topListItem">
             <Link className="link">{user && "LOGOUT"}</Link>
-            {/* if user display logut */}
+            
           </li>
           {/*we defined link className as global in index.html */}
         </ul>

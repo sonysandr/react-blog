@@ -10,11 +10,11 @@ export default function Login() {
         <input type="text" className="loginInput" placeholder="username" />
         <label>Password</label>
         <input type="password" className="loginInput" placeholder="password" />
-        <button className="loginButton">Login</button>
+        <button id="loginButton">Login</button>
       </form>
 
       <button className="loginRegButton">
-        <Link className="link"  to='/register'>
+        <Link className="link" to="/register">
           Register
         </Link>
       </button>

@@ -14,7 +14,7 @@ function App() {
     <>
       <TopBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={user ? <Home /> : <Login/>} />
         <Route path="/write" element={user ?  <Write/> : <Login/>} />
         <Route path="/settings" element={user ? <Settings/> : <Login/>} />
         <Route path="/login" element={user ? <Home /> : <Login />} />
